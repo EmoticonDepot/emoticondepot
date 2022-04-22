@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    scroll-behavior: smooth;
+}
+
+.select{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.drag{
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+}
+
+body{
+    display: flex;
+    background-color: #f4f9fe;
+    overflow: hidden;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+    padding: 40px 20px;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1000px;
+}
+
+.container .logo img{
+    position: relative;
+    padding: 0 0 30px 0;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    cursor: pointer;
+}
+
+.container .search-box{
+    position: relative;
+    margin: 0 auto;
+    height: 45px;
+    max-width: 440px;
+    margin-bottom: 40px;
+}
+
+.search-box input{
+    position: absolute;
+    padding: 0 15px 0 45px;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: calc(0.5 * 44px);
+    color: #fff;
+    background-color: #3b3e40;
+}
+
+.search-box i{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    z-index: 2;
+    font-size: 20px;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.emoticons{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.emoticon-card{
+    cursor: pointer;
+    box-shadow: 0 4px 16px #e5e7eb;
+}
+
+.emoticon-card:hover{
+    box-shadow: 0 4px 16px 2px #cfd3db;
+}
+
+.container .emoticons .emoticon-card{
+    position: relative;
+    margin: 12px;
+    height: 100px;
+    width: 180px;
+    border-radius: 7px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.container .emoticon-card .emoticon-text{
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .emoticon-card textarea{
+    position: absolute;
+    left: -9999px;
+}
+
+.toast{
+    position: absolute;
+    padding: 20px 35px 20px 25px;
+    width: 320px;
+    height: 75px;
+    bottom: 25px;
+    right: 30px;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-left: 6px solid #36aa69;
+    transform: translateX(calc(100% + 30px));
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+    overflow: hidden;
+}
+
+.toast.active{
+    transform: translateX(0%);
+}
+
+.toast .toast-content{
+    display: flex;
+    align-items: center;
+}
+
+.toast-content .check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #36aa69;
+    border-radius: 50%;
+}
+
+.toast-content .message{
+    display: flex;
+    margin: 0 20px;
+    flex-direction: column;
+}
+
+.message .text{
+    font-size: 16px;
+    font-weight: 600;
+    color: #555555;
+}
+
+.toast .close{
+    position: absolute;
+    padding: 2px 0;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.toast .close:hover{
+    opacity: 0.9;
+}
+
+.toast .progress{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: #ddd;
+}
+
+.toast .progress:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: #36aa69
+}
+
+.progress.active:before{
+    animation: progress 3s linear forwards;
+}
+
+@keyframes progress{
+    100%{
+        right: 100%;
+    }
+}
+
+.emoticons.disableClick .emoticon-card{
+    cursor: default;
+    pointer-events: none;
+}
