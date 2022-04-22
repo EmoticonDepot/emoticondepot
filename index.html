@@ -12,7 +12,7 @@
     <link rel="icon" href="image/emoticondepot.png" type="shortcut icon">
     <title>顏文字庫 - 豐富多樣的顏文字</title>
 </head>
-<body>
+<body class="support">
     <div class="container">
         <div class="logo">
             <a href="index.html"></a>
@@ -25,26 +25,78 @@
         </div>
 
         <div class="emoticons">
-            <div class="emoticon-card" data-firsttag="興奮" data-secondtag="耶" onclick="clicked()">
-                <div class="emoticon-text select drag" onclick="copyEvent('⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾')">⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾</div>
+            <div class="emoticon-card" data-name="⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾" data-firsttag="興奮" data-secondtag="耶" onclick="copyEvent('⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾')">
+                <div class="emoticon-text select drag">⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾</div>
                 <textarea id="⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾">⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾</textarea>
             </div>
 
-            <div class="emoticon-card" data-firsttag="懊惱" data-secondtag="唉唉" onclick="clicked()">
-                <div class="emoticon-text select drag" onclick="copyEvent('(๑•ั็ω•็ั๑)')">(๑•ั็ω•็ั๑)</div>
+            <div class="emoticon-card" data-name="(๑•ั็ω•็ั๑)" data-firsttag="懊惱" data-secondtag="唉" onclick="copyEvent('(๑•ั็ω•็ั๑)')">
+                <div class="emoticon-text select drag">(๑•ั็ω•็ั๑)</div>
                 <textarea id="(๑•ั็ω•็ั๑)">(๑•ั็ω•็ั๑)</textarea>
             </div>
 
-            <div class="emoticon-card" data-firsttag="臉紅" data-secondtag="害羞" onclick="clicked()">
-                <div class="emoticon-text select drag" onclick="copyEvent('⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄')">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</div>
+            <div class="emoticon-card" data-name="⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄" data-firsttag="臉紅" data-secondtag="害羞" onclick="copyEvent('⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄')">
+                <div class="emoticon-text select drag">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</div>
                 <textarea id="⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</textarea>
             </div>
+
+            <div class="emoticon-card" data-name="(ꐦ°᷄д°᷅)" data-firsttag="生氣" data-secondtag="欠揍" onclick="copyEvent('(ꐦ°᷄д°᷅)')">
+                <div class="emoticon-text select drag">(ꐦ°᷄д°᷅)</div>
+                <textarea id="(ꐦ°᷄д°᷅)">(ꐦ°᷄д°᷅)</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="(╯✧∇✧)╯" data-firsttag="眼睛發亮" data-secondtag="翻" onclick="copyEvent('(╯✧∇✧)╯')">
+                <div class="emoticon-text select drag">(╯✧∇✧)╯</div>
+                <textarea id="(╯✧∇✧)╯">(╯✧∇✧)╯</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="٩(◦`꒳´◦)۶" data-firsttag="加油" data-secondtag="耶" onclick="copyEvent('٩(◦`꒳´◦)۶')"">
+                <div class="emoticon-text select drag">٩(◦`꒳´◦)۶</div>
+                <textarea id="٩(◦`꒳´◦)۶">٩(◦`꒳´◦)۶</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="(ノ▼Д▼)ノ" data-firsttag="眼睛發亮" data-secondtag="翻" onclick="copyEvent('(ノ▼Д▼)ノ')">
+                <div class="emoticon-text select drag">(ノ▼Д▼)ノ</div>
+                <textarea id="(ノ▼Д▼)ノ">(ノ▼Д▼)ノ</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="ㅍ_ㅍ" data-firsttag="鄙視" data-secondtag="喔" onclick="copyEvent('ㅍ_ㅍ')">
+                <div class="emoticon-text select drag">ㅍ_ㅍ</div>
+                <textarea id="ㅍ_ㅍ">ㅍ_ㅍ</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="ʅ（´◔౪◔）ʃ" data-firsttag="阿災" data-secondtag="沒辦法" onclick="copyEvent('ʅ（´◔౪◔）ʃ')">
+                <div class="emoticon-text select drag">ʅ（´◔౪◔）ʃ</div>
+                <textarea id="ʅ（´◔౪◔）ʃ">ʅ（´◔౪◔）ʃ</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="╮(╯∀╰)╭" data-firsttag="沒辦法" data-secondtag="唉" onclick="copyEvent('╮(╯∀╰)╭')">
+                <div class="emoticon-text select drag">╮(╯∀╰)╭</div>
+                <textarea id="╮(╯∀╰)╭">╮(╯∀╰)╭</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="(●⁰౪⁰●)" data-firsttag="哈哈" data-secondtag="欠揍" onclick="copyEvent('(●⁰౪⁰●)')">
+                <div class="emoticon-text select drag">(●⁰౪⁰●)</div>
+                <textarea id="(●⁰౪⁰●)">(●⁰౪⁰●)</textarea>
+            </div>
+
+            <div class="emoticon-card" data-name="(・ω・)" data-firsttag="蛤" data-secondtag="抱歉" onclick="copyEvent('(・ω・)')">
+                <div class="emoticon-text select drag">(・ω・)</div>
+                <textarea id="(・ω・)">(・ω・)</textarea>
         </div>
+        <div class="emoticons">
+            <div class="emoticon-card" data-name="_(:3 」∠ )_" data-firsttag="懶" data-secondtag="嘟嘴" onclick="copyEvent('_(:3 」∠ )_')">
+                <div class="emoticon-text select drag">_(:3 」∠ )_</div>
+                <textarea id="_(:3 」∠ )_">_(:3 」∠ )_</textarea>
+            </div>
+
+        </div>
+    </div>
     </div>
 
     <div class="toast select drag">
         <div class="toast-content">
-            <i class='bx bx-check check'></i>
+            <i class='bx bx-check toastIcon'></i>
 
             <div class="message">
                 <span class="text">已成功複製顏文字</span>
@@ -53,6 +105,19 @@
             <i class='bx bx-x close' onclick="closeToast()"></i>
 
             <div class="progress"></div>
+        </div>
+    </div>
+
+    <div class="warning active select drag">
+        <div class="warning-content">
+            <i class='bx bx-x warningIcon'></i>
+
+            <div class="message">
+                <span class="text">不支援過舊的瀏覽器</span>
+            </div>
+
+            <i class='bx bx-x close' onclick="closeWarning()"></i>
+
         </div>
     </div>
 
