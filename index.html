@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ZH-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="提供豐富多樣的顏文字庫⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾ 點擊直接複製超方便⎝(◕u◕)⎠ 完全免費無廣告(✧≖‿ゝ≖)">
+    <meta name="author" content="顏文字庫">
+    <link href="css/style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="image/emoticondepot.png" type="image/x-icon">
+    <title>顏文字庫 - 豐富多樣的顏文字</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"></a>
+            <img src="image/emoticondepot.png" alt="" class="select drag">
+        </div>
+
+        <div class="search-box">
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="搜尋一個關鍵字">
+        </div>
+
+        <div class="emoticons">
+            <div class="emoticon-card" data-firsttag="興奮" data-secondtag="耶" onclick="clicked()">
+                <div class="emoticon-text select drag" onclick="copyEvent('⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾')">⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾</div>
+                <textarea id="⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾">⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾</textarea>
+            </div>
+
+            <div class="emoticon-card" data-firsttag="懊惱" data-secondtag="冏" onclick="clicked()">
+                <div class="emoticon-text select drag" onclick="copyEvent('(๑•ั็ω•็ั๑)')">(๑•ั็ω•็ั๑)</div>
+                <textarea id="(๑•ั็ω•็ั๑)">(๑•ั็ω•็ั๑)</textarea>
+            </div>
+
+            <div class="emoticon-card" data-firsttag="臉紅" data-secondtag="害羞" onclick="clicked()">
+                <div class="emoticon-text select drag" onclick="copyEvent('⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄')">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</div>
+                <textarea id="⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄">⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄</textarea>
+            </div>
+        </div>
+    </div>
+
+    <div class="toast select drag">
+        <div class="toast-content">
+            <i class='bx bx-check check'></i>
+
+            <div class="message">
+                <span class="text">已成功複製顏文字</span>
+            </div>
+
+            <i class='bx bx-x close' onclick="closeToast()"></i>
+
+            <div class="progress"></div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
