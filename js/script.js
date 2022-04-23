@@ -93,6 +93,11 @@ if(browser == "safari"){
     container.style.pointerEvents = "auto";
     body.style.overflow = "auto";
     warning.classList.remove("active");
+}else if(browser == "chrome"){
+    container.style.opacity = "1";
+    container.style.pointerEvents = "auto";
+    body.style.overflow = "auto";
+    warning.classList.remove("active");
 };
 
 function closeWarning(){
