@@ -10,18 +10,10 @@
 
 .select{
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
 }
 
 .drag{
     -webkit-user-drag: none;
-    -moz-user-drag: none;
-    -ms-user-drag: none;
-}
-
-::-webkit-scrollbar{
-    transform: translateX(1px);
 }
 
 body{
@@ -30,6 +22,22 @@ body{
     /* Not Support */
     overflow: hidden;
 }
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin: 0 0 5px 0;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    background: rgb(219,219,219);
+}
+
+
 
 .container{
     position: relative;
