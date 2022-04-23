@@ -23,21 +23,24 @@ body{
     overflow: hidden;
 }
 
-body::-webkit-scrollbar {
+body::-webkit-scrollbar{
     width: 12px;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track{
     border-radius: 10px;
     margin: 0 0 5px 0;
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb{
     border-radius: 6px;
     background: rgb(219,219,219);
 }
 
-
+body::-webkit-scrollbar-thumb:hover{
+    border-radius: 6px;
+    background: rgb(200,200,200);
+}
 
 .container{
     position: relative;
