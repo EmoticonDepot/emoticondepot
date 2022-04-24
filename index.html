@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="ZH-TW">
-<head>
+<html lang="ZH-TW"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
     <meta name="description" content="提供豐富多樣的顏文字庫⁽⁽٩(๑˃̶͈̀ ᗨ ˂̶͈́)۶⁾⁾ 點擊直接複製超方便⎝(◕u◕)⎠ 完全免費無廣告(✧≖‿ゝ≖)">
     <meta name="author" content="顏文字庫">
-    <meta name="google-site-verification" content="EKVzlRJqp61JO5KYRpd17s2GbCes5PQNM8Lr-bvg948" />
+    <meta name="google-site-verification" content="EKVzlRJqp61JO5KYRpd17s2GbCes5PQNM8Lr-bvg948">
     <link href="css/style.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="image/emoticondepot.png" type="shortcut icon">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <link href="image/emoticondepot.png" type="shortcut icon" rel="icon">
     <title>顏文字庫 - 豐富多樣的顏文字</title>
 </head>
-<body class="support">
-    <div class="container">
+<body class="support" style="overflow: auto;">
+    <div class="container" style="opacity: 1; pointer-events: auto;">
         <div class="logo">
             <a href="index.html"></a>
             <img src="image/emoticondepot.png" alt="" class="select drag">
@@ -51,7 +50,7 @@
                 <textarea id="(╯✧∇✧)╯">(╯✧∇✧)╯</textarea>
             </div>
 
-            <div class="emoticon-card" data-name="٩(◦`꒳´◦)۶" data-firsttag="加油" data-secondtag="耶" onclick="copyEvent('٩(◦`꒳´◦)۶')"">
+            <div class="emoticon-card" data-name="٩(◦`꒳´◦)۶" data-firsttag="加油" data-secondtag="耶" onclick="copyEvent('٩(◦`꒳´◦)۶')" "="">
                 <div class="emoticon-text select drag">٩(◦`꒳´◦)۶</div>
                 <textarea id="٩(◦`꒳´◦)۶">٩(◦`꒳´◦)۶</textarea>
             </div>
@@ -117,31 +116,82 @@
 
     <div class="toast select drag">
         <div class="toast-content">
-            <i class='bx bx-check toastIcon'></i>
+            <i class="bx bx-check toastIcon"></i>
 
             <div class="message">
                 <span class="text">已成功複製顏文字</span>
             </div>
 
-            <i class='bx bx-x close' onclick="closeToast()"></i>
+            <i class="bx bx-x close" onclick="closeToast()"></i>
 
             <div class="progress"></div>
         </div>
     </div>
 
-    <div class="warning active select drag">
+    <div class="warning select drag">
         <div class="warning-content">
-            <i class='bx bx-x warningIcon'></i>
+            <i class="bx bx-x warningIcon"></i>
 
             <div class="message">
                 <span class="text">不支援您的瀏覽器</span>
             </div>
 
-            <i class='bx bx-x close' onclick="closeWarning()"></i>
+            <i class="bx bx-x close" onclick="closeWarning()"></i>
 
         </div>
     </div>
 
+    <div class="wrapper">
+        <div class="content">
+            <ul class="menu">
+                <li class="item" onclick="back()">
+                    <i class="uil uil-arrow-circle-left"></i>
+                    <span>上一頁</span>
+                </li>
+                
+                <li class="item" onclick="forward()">
+                    <i class="uil uil-arrow-circle-right"></i>
+                    <span>下一頁</span>
+                </li>
+
+                <li class="item" onclick="resetWeb()">
+                    <i class="uil uil-redo"></i>
+                    <span>重新整理</span>
+                </li>
+
+                
+            </ul>
+            
+            <div class="share">
+                <li class="item share">
+                    <div>
+                        <i class="uil uil-share"></i>
+                        <span>分享</span>
+                    </div>
+                    <i class="uil uil-angle-right-b"></i>
+                    <ul class="share-menu">
+                        <li class="item" onclick="getLink()">
+                            <i class="uil uil-link-h"></i>
+                            <span>網址</span>
+                        </li>
+
+                        <li class="item" onclick="shareToTwitter()">
+                            <i class="uil uil-twitter"></i>
+                            <span>推特</span>
+                        </li>
+
+                        <li class="item" onclick="shareToFacebook()">
+                            <i class="uil uil-facebook-f"></i>
+                            <span>臉書</span>
+                        </li>
+
+                    </ul>
+                </li>             
+            </div>
+        </div>
+    </div>
+
     <script src="js/script.js"></script>
-</body>
-</html>
+
+
+</body></html>
