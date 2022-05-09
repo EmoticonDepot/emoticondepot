@@ -78,3 +78,7 @@ if(browser == "chrome"){
 function closeWarning(){
     warning.classList.remove("active");
 };
+
+function goHomepage(){
+    location="https://emoticondepot.github.io";
+};
