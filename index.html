@@ -12,8 +12,8 @@
     <link href="image/emoticondepot.png" type="shortcut icon" rel="icon">
     <title>顏文字庫 - 豐富多樣的顏文字</title>
 </head>
-<body class="support" style="overflow: auto;">
-    <div class="container" style="opacity: 1; pointer-events: auto;">
+<body class="support">
+    <div class="container">
         <div class="logo">
             <img src="image/emoticondepot.png" alt="" class="select drag" onclick="goHomepage();">
         </div>
@@ -133,6 +133,23 @@
         </div>
     </div>
 
+    <div class="copyright select drag">
+        <p class="copyright-text">© Emoticon Depot 2022</p>
+    </div>
+    
+    <div class="warning select drag active">
+        <div class="warning-content">
+            <i class="bx bx-x warningIcon"></i>
+
+            <div class="message">
+                <span class="text">不支援您的瀏覽器</span>
+            </div>
+
+            <i class="bx bx-x close" onclick="closeWarning()"></i>
+
+        </div>
+    </div>
+    
     <div class="toast select drag">
         <div class="toast-content">
             <i class="bx bx-check toastIcon"></i>
@@ -147,20 +164,9 @@
         </div>
     </div>
 
-    <div class="warning select drag">
-        <div class="warning-content">
-            <i class="bx bx-x warningIcon"></i>
-
-            <div class="message">
-                <span class="text">不支援您的瀏覽器</span>
-            </div>
-
-            <i class="bx bx-x close" onclick="closeWarning()"></i>
-
-        </div>
-    </div>
 
     <script src="js/index.js"></script>
 
 
-</body></html>
+</body>
+</html>
