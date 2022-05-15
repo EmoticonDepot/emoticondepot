@@ -1,6 +1,49 @@
 const search = document.querySelector(".search-box input"),
       emoticons = document.querySelector(".emoticons"),
-      emoticonCard = document.querySelectorAll(".emoticon-card");
+      emoticonCard = document.querySelectorAll(".emoticon-card"),
+      container = document.querySelector(".container"),
+      toast = document.querySelector(".toast"),
+      progress = document.querySelector(".progress"),
+      body = document.querySelector("body"),
+      warning = document.querySelector(".warning");
+
+let userAgent = navigator.userAgent;
+let browser;
+      
+if(userAgent.match(/edg/i)){
+    browser = "edge";
+}else if(userAgent.match(/firefox|fxios/i)){
+    browser = "firefox";
+}else if(userAgent.match(/opr/i)){
+    browser = "opera";
+}else if(userAgent.match(/chrome|chromium|crios/i)){
+    browser = "chrome";
+}else if(userAgent.match(/safari/i)){
+    browser = "safari";
+}else{
+    browser = "Unknown";
+}
+
+if(browser == "chrome"){
+    warning.classList.remove("active");
+    container.style.opacity = "1";
+    container.style.pointerEvents = "auto";
+    body.style.overflow = "auto";
+}else if(browser == "edge"){
+    warning.classList.remove("active");
+    container.style.opacity = "1";
+    container.style.pointerEvents = "auto";
+    body.style.overflow = "auto";
+}else if(browser == "safari"){
+    warning.classList.remove("active");
+    container.style.opacity = "1";
+    container.style.pointerEvents = "auto";
+    body.style.overflow = "auto";
+};
+
+document.oncontextmenu = function(){
+    window.event.returnValue = false;
+}
 
 search.addEventListener("keyup", e =>{
     if(e.key == "Enter"){
@@ -25,9 +68,6 @@ search.addEventListener("keyup", () =>{
         emoticon.style.display = "block";
     });
 });
-
-const toast = document.querySelector(".toast"),
-      progress = document.querySelector(".progress");
 
 let timerOne, timerTwo;
 
@@ -60,44 +100,6 @@ function closeToast(){
 
     clearTimeout(timerOne);
     clearTimeout(timerTwo);
-};
-
-const container = document.querySelector(".container"),
-      body = document.querySelector("body"),
-      warning = document.querySelector(".warning");
-
-let userAgent = navigator.userAgent;
-let browser;
-
-if(userAgent.match(/edg/i)){
-    browser = "edge";
-}else if(userAgent.match(/firefox|fxios/i)){
-    browser = "firefox";
-}else if(userAgent.match(/opr/i)){
-    browser = "opera";
-}else if(userAgent.match(/chrome|chromium|crios/i)){
-    browser = "chrome";
-}else if(userAgent.match(/safari/i)){
-    browser = "safari";
-}else{
-    browser = "Unknown";
-}
-
-if(browser == "chrome"){
-    container.style.opacity = "1";
-    container.style.pointerEvents = "auto";
-    body.style.overflow = "auto";
-    warning.classList.remove("active");
-}else if(browser == "edge"){
-    container.style.opacity = "1";
-    container.style.pointerEvents = "auto";
-    body.style.overflow = "auto";
-    warning.classList.remove("active");
-}else if(browser == "safari"){
-    container.style.opacity = "1";
-    container.style.pointerEvents = "auto";
-    body.style.overflow = "auto";
-    warning.classList.remove("active");
 };
 
 function closeWarning(){
